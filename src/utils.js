@@ -29,7 +29,7 @@ export function clearItemStyles(styles) {
 export async function getItemCoordinates(target) {
     const itemCoordinates = new Promise((resolve, reject) => {
         UIManager.measure(target, (x, y, width, height, px, py) => {
-            py = py + StatusBar.currentHeight
+            py = py
 
             const coords = {
                 width,
